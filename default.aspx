@@ -8,13 +8,17 @@
     <link type="text/css" rel="stylesheet" href="StyleSheet.css"/>
     <style type="text/css">
         .auto-style2 {
-            width: 199px;
-        }
-        .auto-style5 {
-            width: 95px;
+            width: 185px;
         }
         .auto-style6 {
             width: 56px;
+        }
+        .auto-style8 {
+            text-align: right;
+            width: 113px;
+        }
+        .auto-style9 {
+            width: 3px;
         }
     </style>
 </head>
@@ -25,17 +29,13 @@
         <h1>Mortgage Calculator</h1>
         
         <br /><br />
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        &nbsp;&nbsp;&nbsp;
         
         <br />
-        <%If Not IsPostBack Then%>
+        
             <table style="width:100%;">
                 <tr>
-                    <td class="auto-style6">Loan Amount:</td>
-                    <td class="auto-style5"> <asp:TextBox ID="tbLoanAmt" runat="server" style="margin-left: 0px" ></asp:TextBox>
+                    <td class="auto-style8">*Loan Amount:</td>
+                    <td class="auto-style9"> <asp:TextBox ID="tbLoanAmt" runat="server" style="margin-left: 0px" ></asp:TextBox>
                   
                     </td>
                     <td class="auto-style2">
@@ -45,8 +45,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">Annual Interest %:</td>
-                    <td class="auto-style5"> <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
+                    <td class="auto-style8">*Annual Interest %:</td>
+                    <td class="auto-style9"> <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
         
                     </td>
                     <td class="auto-style2">
@@ -56,8 +56,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">Loan Term (Yrs):</td>
-                    <td class="auto-style5"> <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
+                    <td class="auto-style8">*Loan Term (Yrs):</td>
+                    <td class="auto-style9"> <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
         
                     </td>
                     <td class="auto-style2">
@@ -71,10 +71,10 @@
 
         <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
         
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
         
         <asp:Button ID="btnClear" runat="server" Text="Clear" />
-        
+        <%If Not IsPostBack Then%>
         </p>
         <p>&nbsp;</p>
         <p>Welcome. Please complete the fields above and click the calculate button.</p>
