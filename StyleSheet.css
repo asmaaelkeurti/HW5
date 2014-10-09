@@ -1,6 +1,21 @@
-﻿body { background-color:lightcoral; color:black;}
+﻿body { background-color:lightcoral; color:black;width:80%;padding-top:10px;  margin:auto;}
 
+#main{
+    
 
+}
+
+.bold {
+    font-weight:bold;
+    font-size:20px;
+}
+
+h1 {text-align:center;
+}
+
+.auto-style6 {
+    text-align:right;
+}
 .cssgridview {
     width:auto;
     margin:5px 0 10px 0;
